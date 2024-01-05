@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Mundial con contador</title>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom_css.css">
+</head>
+
+<body>
+    <div class="imagen-fondo pt-5 min-vh-100" id="fondo">
+        <div class="container">
+            <span class="relleno"></span>
+            <div class="row pt-5">
+                <div class="col-md-3 mx-auto black-transparent">
+                    <div class="titulo-principal titulos text-center" id="mostrar"></div>
+                </div>
+            </div>
+            <div class="p-3 mt-3 secundarios">
+                <div class="row py-3 px-2 black-transparent" id="contenedorRelojes">
+                    <div id="pruebaJS">
+
+                    </div>
+
+                    <div class="col-xl-2 text-center container-relojes align-items-center" id="contenedor-reloj">
+                        <span class="titulos">Hora Local</span>
+                        <div class="clock" id="relojL">
+                            <span class="time local-time" id="reloj-h"></span>
+                            <span class="dots time local-time" id="dot1"></span>
+                            <span class="time local-time" id="reloj-m"></span>
+                            <span class="dots time local-time" id="dot2"></span>
+                            <span class="time local-time" id="reloj-s"></span>
+                            <span class="time local-time ms-2" id="reloj-p"></span>
+                        </div>
+                        <div class="time weekday-timediff text-center" id="reloj-L-D"></div>
+                    </div>
+
+                    <div class="col-md text-center">
+                        <span class="titulos" id="clock1">Reloj 1</span>
+                        <div class="colors clock align-items-center">
+                            <div class="time" id="reloj_1"></div>
+                        </div>
+                        <div class="time weekday-timediff text-center" id="reloj-1-D"></div>
+                    </div>
+
+                    <div class="col-xl text-center">
+                        <span class="titulos" id="clock2">Reloj 2</span>
+                        <div class="colors clock">
+                            <div class="time" id="reloj_2"></div>
+                        </div>
+                        <div class="time weekday-timediff text-center" id="reloj-2-D"></div>
+                    </div>
+
+                    <div class="col-xl text-center">
+                        <span class="titulos" id="clock3">Reloj 3</span>
+                        <div class="colors clock">
+                            <div class="time" id="reloj_3"></div>
+                        </div>
+                        <div class="time weekday-timediff text-center" id="reloj-3-D"></div>
+                    </div>
+                    <div class="col-xl text-center">
+                        <span class="titulos" id="clock4">Reloj 4</span>
+                        <div class="colors clock">
+                            <div class="time" id="reloj_4"></div>
+                        </div>
+                        <div class="time weekday-timediff text-center" id="reloj-4-D"></div>
+                    </div>
+
+                    <div class="col-xl text-center">
+                        <span class="titulos" id="clock5">Reloj 5</span>
+                        <div class="clock colors">
+                            <div class="time" id="reloj_5"></div>
+                        </div>
+                        <div class="time weekday-timediff text-center" id="reloj-5-D"></div>
+                    </div>
+                    <div class="col-xl text-center">
+                        <span class="titulos" id="clock6">Reloj 6</span>
+                        <div class="clock colors">
+                            <div class="time" id="reloj_6"></div>
+                        </div>
+                        <div class="time weekday-timediff text-center" id="reloj-6-D"></div>
+                    </div>
+                </div>
+
+
+                <div class="" id="contenedorSec">
+                    <div class="row mt-2" id="contadores">
+                        <div class="colors-contadores pb-3 pt-3 pe-3 d-flex black-transparent">
+                            <div class="ms-3" id="secContador">
+                                <div class="countdown date-time colors-contadores">
+                                    <span class="text-justify d-block text-capitalize font-weight-normal"
+                                        id="days-to">Faltan:</span>
+                                    <span class="text-justify d-block" id="countdown1"></span>
+                                    <span class="text-justify d-block" id="countdown2"></span>
+                                    <span class="text-justify d-block" id="countdown3"></span>
+                                    <span class="text-justify d-block" id="countdown4"></span>
+                                    <span class="text-justify d-block" id="countdown5"></span>
+                                    <span class="text-justify d-block" id="countdown6"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class=" col-7 p-2 pt-3 d-flex black-transparent" id="contenedorAnio">
+                            <div class="align-items-center ms-3" id="secCompletado">
+                                <div class="countdown date-time colors-contadores">
+                                    <p class="text-justify" id="completado"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mediaInt black-transparent">
+                    <div class="box">
+                        <img src="" alt="" id="albumCoverArt">
+                    </div>
+                    <div class="textBox">
+                        <div id="trackTitle" class="textTitle">Track Title</div>
+                        <div id="artist" class="text">Artist</div>
+                        <div id="album" class="text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Siempre colocar los Scripts debajo del body, HASTA ABAJO-->
+    <script src="./js/clock.js"></script>
+</body>
+
+</html>
