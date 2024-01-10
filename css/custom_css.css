@@ -1,0 +1,183 @@
+body {
+    min-height: 120%;
+    cursor: url("../img/cursor.cur"), auto;
+    overflow: hidden;
+}
+
+.imagen-fondo {
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+    /*background-position: 0% 0%;*/
+    /*background-position: top;*/
+}
+
+@keyframes parpadeo {
+    from {
+        visibility: visible;
+    }
+
+    to {
+        visibility: hidden;
+    }
+}
+
+#relojL span {
+    color: #ffc252;
+}
+
+#contenedorRelojes {
+    position: absolute;
+    display: flex;
+    top: -500px;
+}
+
+#contenedorSec {
+    padding-top: 3px;
+    position: absolute;
+    left: -650px;
+    top: 475px;
+}
+
+.relleno {
+    background-color: #424242a4;
+    display: flex;
+    height: 8em;
+    color: #9494ff;
+    font-family: monospace;
+}
+
+.titulo-principal {
+    font-size: 28px;
+    text-shadow: 2px 2px 2px #202020;
+}
+
+.colors {
+    color: #fff;
+    text-shadow: 2px 2px #202020;
+}
+
+.colors-contadores {
+    color: #fff;
+    text-shadow: 1px 1px #202020;
+}
+
+.clock {
+    font-family: 'Century Gothic';
+    font-weight: normal;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: justify;
+}
+
+.black-transparent {
+    /*background: rgba(0, 0, 0, 0.50);*/
+    background: rgba(0, 0, 0, 0.356);
+    border-radius: 9px;
+    border: solid 1px #ffbe73;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 3px #42424223;
+}
+
+.container-relojes {
+    display: grid;
+}
+
+.countdown {
+
+    width: 100%;
+    height: 100%;
+}
+
+.time {
+    font-size: 28px;
+}
+
+.dots {
+    animation: parpadeo 1s steps(2, start) infinite;
+}
+
+.local-time {
+    /*color: #9494ff;*/
+    color: #fff;
+    text-shadow: 1px 2px #202020;
+}
+
+.weekday-timediff {
+    margin-top: 0.5em;
+    font-family: 'Trajan Pro';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #fff;
+    text-shadow: 1px 2px #202020;
+}
+
+.date-time {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 19px;
+    color: #fff;
+    text-shadow: 1px 2px #202020;
+}
+
+.titulos {
+    font-size: 25px;
+    font-family: 'Trajan Pro';
+    font-weight: bold;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    color: #9494ff;
+    text-shadow: 1px 1px #202020;
+}
+
+/*Media Integration*/
+.mediaInt {
+
+    padding: 10px;
+    height: 178px;
+    width: 579px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-shadow: 3px 3px 3px #464646;
+    position: absolute;
+    left: 1920px;
+    top: 486px;
+}
+
+.textBox {
+    margin-left: 22px;
+}
+
+.textTitle {
+    color: #9494ff;
+    font-family: "Trajan Pro";
+    font-weight: bold;
+}
+
+.text {
+    color: #ffffff;
+    font-family: "Century Gothic";
+}
+
+#albumCoverArt {
+    width: 10em;
+}
+
+#trackTitle {
+    font-size: 25px
+}
+
+#artist {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .time {
+        font-size: 40px;
+    }
+}
